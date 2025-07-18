@@ -13,6 +13,12 @@ import lombok.Data;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class UsuarioRequest {
 
+    private int status;
+    private String erro;
+    private String message;
+    private String token;
+    private String refreshToken;
+    private String expirationTime;
     private String nome;
     private String senha;
     private String email;
